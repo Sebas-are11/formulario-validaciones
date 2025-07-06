@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Formulario</title>
+  <meta charset="UTF-8">
+  <title>Formulario Validado</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Formulario de ejemplo</h1>
+  <h1>Formulario de Registro</h1>
+  <form id="formulario">
+    <label>Nombre:
+      <input type="text" id="nombre" required>
+      <span class="error" id="error-nombre"></span>
+    </label>
+
+    <label>Email:
+      <input type="email" id="email" required>
+      <span class="error" id="error-email"></span>
+    </label>
+
+    <label>Contraseña:
+      <input type="password" id="password" required>
+      <span class="error" id="error-password"></span>
+    </label>
+
+    <label>Confirmar Contraseña:
+      <input type="password" id="confirmar" required>
+      <span class="error" id="error-confirmar"></span>
+    </label>
+
+    <label>Edad:
+      <input type="number" id="edad" required>
+      <span class="error" id="error-edad"></span>
+    </label>
+
+    <button type="submit" id="enviar" disabled>Enviar</button>
+    <button type="reset">Reiniciar</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
